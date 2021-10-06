@@ -1,0 +1,261 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth ;
+}
+
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+ 
+/* navbar styling */
+.navbar {
+    position: fixed;
+    width: 100%;
+    padding: 30px 0 ;
+    font-family: sans-serif;
+    background-color: rgba(228, 46, 22, 0.596);
+    border-radius: 0 0 20px 20px;
+    
+}
+
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.navbar .logo a{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+
+}
+
+.navbar .logo a span{
+    color: rgb(255, 217, 134);
+}
+
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .menu li a{
+    color: rgb(255, 255, 255);
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-left: 25px;
+    padding: 8px 25px;
+    transition: all 0,5 ease;
+    border-style: none; /* nav bar */
+    box-shadow: 0 0 5px white 0 0 10px, 0 0 15px white;
+}
+
+.navbar .menu li a:hover{
+color: rgb(250, 180, 100);
+background-color: rgb(255, 255, 255);
+box-shadow: 0 0 10px white;
+
+}
+
+.btn {
+    border: 1px solid white;
+    padding: 10px 35px ;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    outline: none;
+    transition: 0,6 ease;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: orange;
+    color: white;
+    box-shadow: 0 0 5px white 0 0 10px, 0 0 15px white;
+    font-weight: bold;
+
+}
+/* home styling */
+.home{
+display: flex;
+background:url(/img/Untitled-4\ [Recovered].png);
+height: 100vh;
+background-attachment: fixed;
+color: rgb(255, 255, 255);
+min-height: 500px;
+font-family: sans-serif;
+}
+
+.home .max-width{
+    margin: auto 0 auto 40px;
+}
+
+.home .home-content .text1{
+font-size: 27px;
+
+}
+
+.home .home-content .text2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+ }
+.home .home-content .text3{
+        font-size: 40px;
+        margin: 5px 0;
+}
+
+.home .home-content .text3 span{ 
+   color: rgb(255, 174, 0);
+   font-weight: 500;
+}
+
+/* About me styling */
+.headings{
+    font-family: sans-serif ;
+    font-size: 3rem;
+    text-align: center;
+    margin: 40px 0px;
+}
+
+#about{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px ;
+    color: rgb(255, 255, 255);
+    background-color: rgb(252, 88, 24);
+
+}
+#pic{
+    display: flex;
+}
+#pic img{
+    width: 600px;
+    height: 500px;
+}
+#intro{
+    display: flex;
+    flex-direction: column ;
+    text-align: justify;
+    padding:30px ;
+    color: rgb(255, 255, 255);
+}
+#intro h2{
+    font-size: 3rem;
+    margin-bottom: 1px;
+}
+#intro p{
+font-size: 2rem;
+margin-bottom: 2px;
+}
+
+/* portfolio styling */
+#portfolio{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0) ;
+    color: white;
+    align-items: center;
+    padding: 20px;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+.gallery img{
+width: 400px;
+height: 280px;
+margin: 10px;
+}
+
+/* service styling */
+#services{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: rgb(255, 113, 61);
+    background-image: url(/img/Untitled-4\ [Recovered].png);
+    color: white;
+}
+.row{
+   display: flex; 
+   justify-content: space-around;
+   flex-wrap: wrap;
+   box-sizing: border-box;
+}
+.box{
+    display: flex;
+    flex-direction: column ;
+    width: 350px;
+    height: 450px;
+    border: 1px solid red;
+    margin: 10px;
+    align-items: center;
+    text-align: justify;
+    padding: 10px;
+    border-radius: 15px;
+    background: linear-gradient(to top, rgba(228, 95, 77, 0.171) 50%, rgba(0, 0, 0, 0.397) 50%);
+    background-size: 100% 200%;
+    transition: all .8s;
+}
+.box:hover{
+    background-position: left bottom;
+    color: white;
+    border: none;
+    box-shadow: 0 0 20px ;
+}
+
+/* contact formular styling */
+
+/* style input */
+#contact{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+}
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px;
+    border: 1px solid rgb(107, 103, 103); 
+    border-radius: 4px; 
+    box-sizing: border-box;
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical 
+  }
+  
+  /* farve styling*/
+  input[type=submit] {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* kører mus over submit, og farven bliver lysere */
+  input[type=submit]:hover {
+    background-color: #ff8c08;
+    color: white;
+  }
+  
+  /* backgrund color, måske skifter til et billede */
+  .container {
+    border-radius: 5px;
+    background-color: #000000;
+    padding: 20px;
+   /*background måske background-image: url(/img/lucas-benjamin-GAM-7l4QzmI-unsplash.jpg); */
+  }
